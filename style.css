@@ -1,0 +1,53 @@
+/* styles.css - intentional validation issues included for practice */
+
+
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+}
+
+
+header {
+background-color: #2e8b57;
+color: white;
+padding: 20px;
+text-align: center;
+}
+
+
+h1 { font-size: 2rem; }
+
+
+/* INTENTIONAL: vendor-specific property WITHOUT standard fallback */
+#tips img {
+-webkit-border-radius: 8px; /* vendor prefix only, no border-radius fallback */
+}
+
+
+/* INTENTIONAL: invalid/non-standard property */
+.gallery-image {
+text-shadow-blur: 5px; /* invalid CSS property, will trigger error */
+}
+
+
+/* INTENTIONAL: unused class (to help find unused CSS) */
+.unused {
+display: block;
+margin: 10px;
+}
+
+
+/* Basic styles */
+main { padding: 20px; }
+section { margin-bottom: 30px; }
+
+
+/* Dark mode class (works when JS toggles it) */
+.dark-mode {
+background-color: #111;
+color: #ddd;
+}
+
+
+

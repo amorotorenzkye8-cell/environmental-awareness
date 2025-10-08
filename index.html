@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Environmental Awareness Site - Hack Compadres</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+<h1>Environmental Awareness Site</h1>
+<p>Learn. Act. Protect.</p>
+<button id="darkToggle">Toggle Dark Mode</button>
+</header>
+
+
+<main>
+<section id="about">
+<h2>About the Environment</h2>
+<p>This site teaches simple ways to help the planet.</p>
+<!-- INTENTIONAL ERROR: Improper nesting (div inside p) -->
+<p><div>Note: this paragraph contains improper nesting for validation practice.</div></p>
+</section>
+
+
+<section id="tips">
+<h2>Tips to Help</h2>
+<ul>
+<li>Reduce waste</li>
+<li>Use less plastic</li>
+<li>Plant a tree</li>
+</ul>
+
+
+<!-- INTENTIONAL: missing alt attribute -->
+<img src="images/trees.jpg">
+
+
+<!-- INTENTIONAL: empty alt attribute (warning) -->
+<img src="images/recycle.jpg" alt="">
+</section>
+
+
+<section id="gallery">
+<h2>Gallery</h2>
+<!-- INTENTIONAL: deprecated <center> and 'align' attributes -->
+<center>
+<img src="images/river.jpg" alt="River view" width="300" align="left">
+<img src="images/forest.jpg" alt="Forest view" width="300" align="right">
+</center>
+</section>
+
+
+<section id="contact">
+<h2>Contact Us</h2>
+<form action="/submit" method="post">
+<label for="name">Name</label>
+<input id="name" type="text" required>
+
+
+<label for="email">Email</label>
+<input id="email" type="email">
+
+
+<button type="submit">Send</button>
+</form>
+</section>
+</main>
+
+
+<footer>
+</html>
+
